@@ -1,3 +1,3 @@
 # graduation_app
 
-### An APP designed for those who desire to adopt cats or dogs.
+### An APP designed for those who have pets or desire to have one.
