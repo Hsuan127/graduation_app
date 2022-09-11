@@ -113,7 +113,7 @@ class MM
             child: inChild,
           ),
           actions: <Widget>[
-            FlatButton(
+            ElevatedButton(
               child: Text(MM.strOk(context)),
               onPressed: () {
                 Navigator.of(context).pop();
@@ -122,7 +122,7 @@ class MM
             ),
 
             if( isNo )
-              FlatButton(
+              ElevatedButton(
                 child: Text(MM.strCancel(context)),
                 onPressed: () {
                   Navigator.of(context).pop();
@@ -154,7 +154,7 @@ class MM
             ),
           ),
           actions: <Widget>[
-            FlatButton(
+            ElevatedButton(
               child: Text(inOkStr ?? MM.strOk(context)),
               onPressed: () {
                 Navigator.of(context).pop();

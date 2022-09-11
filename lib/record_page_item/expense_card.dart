@@ -4,7 +4,7 @@ import 'package:animal_app/record_page_item/add_expense.dart';
 class ExpenseCard extends StatelessWidget{
   final String balance;
 
-  ExpenseCard({required this.balance});
+  const ExpenseCard({super.key, required this.balance});
 
   @override
   Widget build(BuildContext context){
@@ -42,9 +42,10 @@ class ExpenseCard extends StatelessWidget{
                 right: 0.0,
                 child: FloatingActionButton(
                   mini: true,
-                    heroTag: "uniqueTag",
+                    //heroTag: "uniqueTag",
                     child: const Icon(Icons.add),
                     onPressed: (){
+                      //Navigator.pushNamedAndRemoveUntil(context, '/addExpense', (route) => false);
                       Navigator.of(context).push(
                           MaterialPageRoute(
                             builder: (context) => AddExpense(),

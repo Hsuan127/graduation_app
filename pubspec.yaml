@@ -50,6 +50,9 @@ dependencies:
   cloud_firestore: ^3.4.2
   flutter_form_builder: ^7.5.0
   form_builder_validators: ^8.3.0
+  multi_select_flutter: ^4.1.2
+  firebase_auth: ^3.8.0
+  drag_like: ^3.0.0
 
 
 
@@ -76,8 +79,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+    - assets/images/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

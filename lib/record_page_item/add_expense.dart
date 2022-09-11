@@ -6,22 +6,22 @@ import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/services.dart';
 
-void main() {
-  runApp(ExpensePage());
-}
-
-class ExpensePage extends StatelessWidget {
-  const ExpensePage({Key? key}) : super(key : key);
-  static const String _title = '新增花費';
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        title: _title,
-        home: const AddExpense(),
-      );
-  }
-}
+// void main() {
+//   runApp(ExpensePage());
+// }
+//
+// class ExpensePage extends StatelessWidget {
+//   const ExpensePage({Key? key}) : super(key : key);
+//   static const String _title = '新增花費';
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//         title: _title,
+//         home: const AddExpense(),
+//       );
+//   }
+// }
 
 
 class AddExpense extends StatefulWidget {
@@ -51,10 +51,10 @@ class _AddExpense extends State<AddExpense> {
   _nextFocus(FocusNode focusNode) {
     FocusScope.of(context).requestFocus(focusNode);
   }
-  _submitForm() {
-    Scaffold.of(context).showSnackBar(SnackBar(content:
-    Text('紀錄已儲存！')));
-  }
+  // _submitForm() {
+  //   Scaffold.of(context).showSnackBar(SnackBar(content:
+  //   Text('紀錄已儲存！')));
+  // }
 
   @override
   void initState() {
@@ -110,10 +110,11 @@ class _AddExpense extends State<AddExpense> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Text('新增花費'),),
       body: SingleChildScrollView(
             padding: const EdgeInsets.all(60.0),
-            child: Hero(
-              tag: 'uniqueTag',
+            child: //Hero(
+              //tag: 'uniqueTag',
               // flightShuttleBuilder: (BuildContext flightContext,
               //     Animation<double> animation,
               //     HeroFlightDirection flightDirection,
@@ -124,7 +125,8 @@ class _AddExpense extends State<AddExpense> {
               //     child: fromHeroContext.widget,
               //   );
               // },
-              child: FormBuilder(
+              //child:
+              FormBuilder(
                 key: _formKey,
                 autovalidateMode: AutovalidateMode.always,
                 onChanged: () {
@@ -350,7 +352,7 @@ class _AddExpense extends State<AddExpense> {
                                       focusNode: _descriptionFocusNode,
                                       onSubmitted: (String ?value) {
                                         //Do anything with value
-                                        _submitForm();
+                                        //_submitForm();
                                       },
                                       decoration: InputDecoration(
                                         contentPadding: const EdgeInsets.symmetric(
@@ -400,7 +402,7 @@ class _AddExpense extends State<AddExpense> {
               ),
 
               //),
-            ),
+            //),
           ),
 
 

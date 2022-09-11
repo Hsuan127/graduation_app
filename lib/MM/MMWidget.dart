@@ -6,7 +6,7 @@ class MMWidget {
   // 建按鈕 
   static Widget newFlatButton( Widget child , VoidCallback callback )
   {
-    return FlatButton(onPressed: callback, child: child) ;
+    return ElevatedButton(onPressed: callback, child: child) ;
   }
   // 建捲軸
   static Widget newScroll( Widget child , [Axis scrollDirection = Axis.vertical ] )

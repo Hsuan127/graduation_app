@@ -54,10 +54,10 @@ class _AddDoctor extends State<AddDoctor> {
   _nextFocus(FocusNode focusNode) {
     FocusScope.of(context).requestFocus(focusNode);
   }
-  _submitForm() {
-    Scaffold.of(context).showSnackBar(SnackBar(content:
-    Text('紀錄已儲存！')));
-  }
+  // _submitForm() {
+  //   Scaffold.of(context).showSnackBar(SnackBar(content:
+  //   Text('紀錄已儲存！')));
+  // }
 
   @override
   void initState() {
@@ -280,7 +280,7 @@ class _AddDoctor extends State<AddDoctor> {
                                 focusNode: _descriptionFocusNode,
                                 onFieldSubmitted: (String value) {
                                   //Do anything with value
-                                  _submitForm();
+                                  //_submitForm();
                                 },
                                 decoration: InputDecoration(
                                   contentPadding: const EdgeInsets.symmetric(
